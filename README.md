@@ -5,7 +5,7 @@ files for the RaveSaber electronics.
 
 Currently we only have a simple breadboard setup for testing the firmware code.
 
-![A Schematic Drawing of the RaveSaber v1.0.0](https://raw.githubusercontent.com/Rave-Saber/Rave-Saber-Hardware/img/schematic.png "RaveSaber Schematics")
+![A Schematic Drawing of the RaveSaber v1.0.0](https://github.com/Rave-Saber/Rave-Saber-Hardware/raw/master/img/schematic.png)
 
 
 ## Required Parts
@@ -29,7 +29,7 @@ from the sidebar.
 
 ## Setup
 
-![A Breadboard Drawing of the RaveSaber v1.0.0](https://raw.githubusercontent.com/Rave-Saber/Rave-Saber-Hardware/img/breadboard.png "RaveSaber Breadboard")
+![A Breadboard Drawing of the RaveSaber v1.0.0](https://github.com/Rave-Saber/Rave-Saber-Hardware/raw/master/img/breadboard.png)
 
 1. Place the ATmega168a chip into the center of the breadboard.
 1. Place the tactile switch and the male header pins.
