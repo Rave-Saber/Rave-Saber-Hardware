@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM2576TV-5G
+D Switching Voltage Regulators, 5V, 3A, Buck PWM 
+K TO-220-5
+$ENDCMP
+#
+#End Doc Library

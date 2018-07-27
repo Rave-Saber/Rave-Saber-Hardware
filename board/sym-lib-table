@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Button)(type Legacy)(uri ${KIPRJMOD}/../symbols/Button.lib)(options "")(descr ""))
+  (lib (name LM2576TV-5G)(type Legacy)(uri ${KIPRJMOD}/../symbols/LM2576TV-5G.lib)(options "")(descr ""))
+)

@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TactileSwitch
+D Tactile Switches SPST OFF-(ON) Round pushbutton 
+K 6mm, THT, Button
+$ENDCMP
+#
+#End Doc Library

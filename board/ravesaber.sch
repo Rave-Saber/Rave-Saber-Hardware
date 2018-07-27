@@ -1,0 +1,768 @@
+EESchema Schematic File Version 4
+LIBS:ravesaber-cache
+EELAYER 26 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Main Board"
+Date "2018-08-03"
+Rev "v2.0.0"
+Comp "Rave Saber"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 5B63E3C5
+P 1000 1350
+F 0 "J1" H 900 1500 50  0000 C CNN
+F 1 "BATT" V 1050 1300 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill1.2mm" H 1000 1350 50  0001 C CNN
+F 3 "" H 1000 1350 50  0001 C CNN
+	1    1000 1350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+BATT #PWR04
+U 1 1 5B63E490
+P 1700 1350
+F 0 "#PWR04" H 1700 1200 50  0001 C CNN
+F 1 "+BATT" H 1715 1523 50  0000 C CNN
+F 2 "" H 1700 1350 50  0001 C CNN
+F 3 "" H 1700 1350 50  0001 C CNN
+	1    1700 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1350 1350 1350
+Wire Wire Line
+	1700 1450 1350 1450
+$Comp
+L power:GND #PWR07
+U 1 1 5B63E650
+P 1700 1450
+F 0 "#PWR07" H 1700 1200 50  0001 C CNN
+F 1 "GND" H 1705 1277 50  0000 C CNN
+F 2 "" H 1700 1450 50  0001 C CNN
+F 3 "" H 1700 1450 50  0001 C CNN
+	1    1700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J2
+U 1 1 5B63E743
+P 2350 1450
+F 0 "J2" H 2450 1700 50  0000 C CNN
+F 1 "LED" V 2300 1400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical_SMD_Pin1Left" H 2350 1450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/571/atalog-1104102.pdf" H 2350 1450 50  0001 C CNN
+F 4 "437-3508010400106101" H 0   0   50  0001 C CNN "Mouser #"
+	1    2350 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR05
+U 1 1 5B63E7E8
+P 2800 1350
+F 0 "#PWR05" H 2800 1200 50  0001 C CNN
+F 1 "VCC" H 2817 1523 50  0000 C CNN
+F 2 "" H 2800 1350 50  0001 C CNN
+F 3 "" H 2800 1350 50  0001 C CNN
+	1    2800 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1350 2550 1350
+Wire Wire Line
+	2800 1650 2550 1650
+$Comp
+L power:GND #PWR09
+U 1 1 5B63E876
+P 2800 1650
+F 0 "#PWR09" H 2800 1400 50  0001 C CNN
+F 1 "GND" H 2805 1477 50  0000 C CNN
+F 2 "" H 2800 1650 50  0001 C CNN
+F 3 "" H 2800 1650 50  0001 C CNN
+	1    2800 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1450 2800 1450
+Text Label 2800 1450 0    50   ~ 0
+CLK
+Wire Wire Line
+	2800 1550 2550 1550
+Text Label 2800 1550 0    50   ~ 0
+DATA
+$Comp
+L power:+BATT #PWR010
+U 1 1 5B63EA86
+P 1100 2750
+F 0 "#PWR010" H 1100 2600 50  0001 C CNN
+F 1 "+BATT" H 1115 2923 50  0000 C CNN
+F 2 "" H 1100 2750 50  0001 C CNN
+F 3 "" H 1100 2750 50  0001 C CNN
+	1    1100 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5B63EB4C
+P 1100 3300
+F 0 "#PWR012" H 1100 3050 50  0001 C CNN
+F 1 "GND" H 1105 3127 50  0000 C CNN
+F 2 "" H 1100 3300 50  0001 C CNN
+F 3 "" H 1100 3300 50  0001 C CNN
+	1    1100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5B63EBA0
+P 1300 3050
+F 0 "C1" H 1418 3096 50  0000 L CNN
+F 1 "100uF" H 1418 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 1338 2900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/420/17065026404d9b18b987fcb-7468.pdf" H 1300 3050 50  0001 C CNN
+F 4 "661-EMZJ350A101MHA0G" H 0   0   50  0001 C CNN "Mouser #"
+	1    1300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 3300 1300 3300
+Wire Wire Line
+	1300 3300 1300 3200
+$Comp
+L Device:L L1
+U 1 1 5B63EFA2
+P 3500 2800
+F 0 "L1" V 3450 2800 50  0000 C CNN
+F 1 "47uH" V 3600 2800 50  0000 C CNN
+F 2 "Inductor:Wuerth WE-LHMI SMD" H 3500 2800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/445/744373965470-1138572.pdf" H 3500 2800 50  0001 C CNN
+F 4 "710-744373965470" H -100 200 50  0001 C CNN "Mouser #"
+	1    3500 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 5B63F075
+P 3800 3050
+F 0 "C2" H 3918 3096 50  0000 L CNN
+F 1 "1500uF" H 3918 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_16x17.5" H 3838 2900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/88/cornell%20dubilier_afk-1160724.pdf" H 3800 3050 50  0001 C CNN
+F 4 "598-AFK158M16H32T-F" H 0   0   50  0001 C CNN "Mouser #"
+	1    3800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR011
+U 1 1 5B63F10C
+P 4350 2800
+F 0 "#PWR011" H 4350 2650 50  0001 C CNN
+F 1 "VCC" H 4367 2973 50  0000 C CNN
+F 2 "" H 4350 2800 50  0001 C CNN
+F 3 "" H 4350 2800 50  0001 C CNN
+	1    4350 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 2800 3350 2800
+Wire Wire Line
+	3800 3200 3800 3300
+Wire Wire Line
+	3800 2900 3800 2800
+Wire Wire Line
+	3800 2800 3650 2800
+Wire Wire Line
+	4350 2800 4050 2800
+Connection ~ 3800 2800
+$Comp
+L Device:D_Schottky_ALT D1
+U 1 1 5B63FA67
+P 3250 3050
+F 0 "D1" V 3204 3129 50  0000 L CNN
+F 1 "3A" V 3295 3129 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 3250 3050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/115/ds30891-89887.pdf" H 3250 3050 50  0001 C CNN
+F 4 "621-B320A-F" H -100 200 50  0001 C CNN "Mouser #"
+	1    3250 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3250 2900 3250 2800
+Wire Wire Line
+	3250 3200 3250 3300
+Connection ~ 3250 3300
+Wire Wire Line
+	3250 3300 3800 3300
+$Comp
+L MCU_Microchip_ATmega:ATmega168A-PU U2
+U 1 1 5B63FE81
+P 3400 6000
+F 0 "U2" H 2760 6046 50  0000 R CNN
+F 1 "ATmega168A-PU" H 2760 5955 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W8.89mm_SMDSocket_LongPads" H 3400 6000 50  0001 C CIN
+F 3 "https://www.mouser.com/datasheet/2/268/Atmel-42733-8-bit-AVR-Microcontroller-ATmega48A-88-1315337.pdf" H 3400 6000 50  0001 C CNN
+F 4 "556-ATMEGA168A-PU" H 350 750 50  0001 C CNN "Mouser #"
+	1    3400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR014
+U 1 1 5B64012E
+P 3500 4400
+F 0 "#PWR014" H 3500 4250 50  0001 C CNN
+F 1 "VCC" H 3517 4573 50  0000 C CNN
+F 2 "" H 3500 4400 50  0001 C CNN
+F 3 "" H 3500 4400 50  0001 C CNN
+	1    3500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4400 3500 4500
+Wire Wire Line
+	2800 4800 2750 4800
+$Comp
+L power:VCC #PWR016
+U 1 1 5B6404A3
+P 2750 4800
+F 0 "#PWR016" H 2750 4650 50  0001 C CNN
+F 1 "VCC" H 2767 4973 50  0000 C CNN
+F 2 "" H 2750 4800 50  0001 C CNN
+F 3 "" H 2750 4800 50  0001 C CNN
+	1    2750 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4500 3400 4400
+$Comp
+L Device:C C5
+U 1 1 5B640786
+P 2300 4550
+F 0 "C5" H 2415 4596 50  0000 L CNN
+F 1 "100nF" H 2415 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2338 4400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/586/900c-965081.pdf" H 2300 4550 50  0001 C CNN
+F 4 "581-0603X7R104JT1AT" H 0   0   50  0001 C CNN "Mouser #"
+	1    2300 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4400 3400 4400
+$Comp
+L power:VCC #PWR013
+U 1 1 5B6414BC
+P 1350 4400
+F 0 "#PWR013" H 1350 4250 50  0001 C CNN
+F 1 "VCC" H 1367 4573 50  0000 C CNN
+F 2 "" H 1350 4400 50  0001 C CNN
+F 3 "" H 1350 4400 50  0001 C CNN
+	1    1350 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5B64152C
+P 1350 4700
+F 0 "#PWR015" H 1350 4450 50  0001 C CNN
+F 1 "GND" H 1355 4527 50  0000 C CNN
+F 2 "" H 1350 4700 50  0001 C CNN
+F 3 "" H 1350 4700 50  0001 C CNN
+	1    1350 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5B6418E5
+P 3400 7600
+F 0 "#PWR021" H 3400 7350 50  0001 C CNN
+F 1 "GND" H 3405 7427 50  0000 C CNN
+F 2 "" H 3400 7600 50  0001 C CNN
+F 3 "" H 3400 7600 50  0001 C CNN
+	1    3400 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 7600 3400 7500
+NoConn ~ 4000 4800
+NoConn ~ 4000 4900
+NoConn ~ 4000 5000
+NoConn ~ 4000 5700
+NoConn ~ 4000 5800
+NoConn ~ 4000 5900
+NoConn ~ 4000 6000
+NoConn ~ 4000 6100
+NoConn ~ 4000 6200
+NoConn ~ 4000 6800
+NoConn ~ 4000 6900
+NoConn ~ 4000 7000
+NoConn ~ 4000 7100
+NoConn ~ 4000 7200
+Wire Wire Line
+	4000 6700 4200 6700
+Text Label 4200 6700 0    50   ~ 0
+BUTTON
+Wire Wire Line
+	4000 6300 4200 6300
+Text Label 4200 6300 0    50   ~ 0
+RESET
+Wire Wire Line
+	4000 5400 4200 5400
+Text Label 4200 5400 0    50   ~ 0
+XTAL1
+Wire Wire Line
+	4000 5500 4200 5500
+Text Label 4200 5500 0    50   ~ 0
+XTAL2
+Wire Wire Line
+	4000 5300 4200 5300
+Text Label 4200 5300 0    50   ~ 0
+CLK
+Wire Wire Line
+	4000 5100 4200 5100
+Text Label 4200 5100 0    50   ~ 0
+DATA
+$Comp
+L Device:Crystal Y1
+U 1 1 5B644E53
+P 6050 2850
+F 0 "Y1" H 6050 3118 50  0000 C CNN
+F 1 "16Mhz" H 6050 3027 50  0000 C CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 6050 2850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/160/C4SD-1131563.pdf" H 6050 2850 50  0001 C CNN
+F 4 "559-FOXSD160-20-LF" H 800 -1350 50  0001 C CNN "Mouser #"
+	1    6050 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2850 5700 2850
+Wire Wire Line
+	6200 2850 6400 2850
+Wire Wire Line
+	6400 2850 6400 2650
+Text Label 6400 2650 0    50   ~ 0
+XTAL2
+Wire Wire Line
+	5700 2850 5700 2650
+Text Label 5700 2650 2    50   ~ 0
+XTAL1
+Wire Wire Line
+	5700 2850 5700 3050
+Connection ~ 5700 2850
+Wire Wire Line
+	6400 2850 6400 3050
+Connection ~ 6400 2850
+$Comp
+L Device:C C6
+U 1 1 5B64756D
+P 5700 3200
+F 0 "C6" H 5815 3246 50  0000 L CNN
+F 1 "20pF" H 5815 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5738 3050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/UPY-GP_NP0_16V-to-50V_16-1109089.pdf" H 5700 3200 50  0001 C CNN
+F 4 "603-CC603GRNPO9BN200" H 800 -1350 50  0001 C CNN "Mouser #"
+	1    5700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5B6475AD
+P 6400 3200
+F 0 "C7" H 6515 3246 50  0000 L CNN
+F 1 "20pF" H 6515 3155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6438 3050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/447/UPY-GP_NP0_16V-to-50V_16-1109089.pdf" H 6400 3200 50  0001 C CNN
+F 4 "603-CC603GRNPO9BN200" H 800 -1350 50  0001 C CNN "Mouser #"
+	1    6400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5B647654
+P 6050 3450
+F 0 "#PWR017" H 6050 3200 50  0001 C CNN
+F 1 "GND" H 6055 3277 50  0000 C CNN
+F 2 "" H 6050 3450 50  0001 C CNN
+F 3 "" H 6050 3450 50  0001 C CNN
+	1    6050 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3350 6050 3350
+Wire Wire Line
+	6050 3350 6050 3450
+Wire Wire Line
+	5700 3350 6050 3350
+Connection ~ 6050 3350
+$Comp
+L Button:TactileSwitch SW1
+U 1 1 5B648CBD
+P 5950 4800
+F 0 "SW1" H 5950 5115 50  0000 C CNN
+F 1 "Button" H 5950 5024 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3305A" H 5950 5050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/140/TL3305-844809.pdf" H 5950 5050 50  0001 C CNN
+F 4 "612-TL3305AF260QG" H 750 -750 50  0001 C CNN "Mouser #"
+	1    5950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Button:TactileSwitch SW2
+U 1 1 5B648D05
+P 5950 5550
+F 0 "SW2" H 5950 5865 50  0000 C CNN
+F 1 "Reset" H 5950 5774 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3305A" H 5950 5800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/140/TL3305-844809.pdf" H 5950 5800 50  0001 C CNN
+F 4 "612-TL3305AF260QG" H 750 -750 50  0001 C CNN "Mouser #"
+	1    5950 5550
+	1    0    0    -1  
+$EndComp
+Text Label 5550 4800 2    50   ~ 0
+BUTTON
+Wire Wire Line
+	5550 4800 5650 4800
+Wire Wire Line
+	5650 4800 5650 4700
+Wire Wire Line
+	5650 4700 5700 4700
+Wire Wire Line
+	5650 4800 5650 4900
+Wire Wire Line
+	5650 4900 5700 4900
+Connection ~ 5650 4800
+Wire Wire Line
+	6200 4900 6250 4900
+Wire Wire Line
+	6250 4700 6200 4700
+Wire Wire Line
+	6250 4700 6250 4800
+Connection ~ 6250 4800
+Wire Wire Line
+	6250 4800 6250 4900
+$Comp
+L power:GND #PWR018
+U 1 1 5B64BF56
+P 6350 4800
+F 0 "#PWR018" H 6350 4550 50  0001 C CNN
+F 1 "GND" H 6355 4627 50  0000 C CNN
+F 2 "" H 6350 4800 50  0001 C CNN
+F 3 "" H 6350 4800 50  0001 C CNN
+	1    6350 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4800 6350 4800
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5B64D915
+P 6800 4750
+F 0 "J5" H 6720 4967 50  0000 C CNN
+F 1 "External Button" H 6720 4876 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill1.2mm" H 6800 4750 50  0001 C CNN
+F 3 "" H 6800 4750 50  0001 C CNN
+	1    6800 4750
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4750 7100 4750
+Text Label 7100 4750 0    50   ~ 0
+BUTTON
+Wire Wire Line
+	7000 4850 7100 4850
+$Comp
+L power:GND #PWR019
+U 1 1 5B651DDC
+P 7100 4850
+F 0 "#PWR019" H 7100 4600 50  0001 C CNN
+F 1 "GND" H 7105 4677 50  0000 C CNN
+F 2 "" H 7100 4850 50  0001 C CNN
+F 3 "" H 7100 4850 50  0001 C CNN
+	1    7100 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5450 6250 5450
+Wire Wire Line
+	6250 5650 6200 5650
+Wire Wire Line
+	6250 5450 6250 5550
+Wire Wire Line
+	6250 5550 6350 5550
+Connection ~ 6250 5550
+Wire Wire Line
+	6250 5550 6250 5650
+$Comp
+L power:GND #PWR020
+U 1 1 5B654592
+P 6350 5550
+F 0 "#PWR020" H 6350 5300 50  0001 C CNN
+F 1 "GND" H 6355 5377 50  0000 C CNN
+F 2 "" H 6350 5550 50  0001 C CNN
+F 3 "" H 6350 5550 50  0001 C CNN
+	1    6350 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5450 5650 5450
+Wire Wire Line
+	5650 5650 5700 5650
+Wire Wire Line
+	5650 5450 5650 5550
+Wire Wire Line
+	5650 5550 5550 5550
+Connection ~ 5650 5550
+Wire Wire Line
+	5650 5550 5650 5650
+Text Label 5550 5550 2    50   ~ 0
+RESET
+$Comp
+L LM2576TV-5G:LM2576TV-5G U1
+U 1 1 5B65C4CE
+P 2400 2900
+F 0 "U1" H 2425 3315 50  0000 C CNN
+F 1 "LM2576TV-5G" H 2425 3224 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-5_P3.4x3.7mm_StaggerOdd_Lead3.8mm_Vertical" H 2200 2900 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/308/LM2576-D-75194.pdf" H 2200 2900 50  0001 C CNN
+F 4 "863-LM2576TV-5G" H -100 200 50  0001 C CNN "Mouser #"
+	1    2400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 3300 1800 3300
+Connection ~ 1300 3300
+Wire Wire Line
+	3250 2800 2950 2800
+Connection ~ 3250 2800
+Wire Wire Line
+	1900 2900 1800 2900
+Wire Wire Line
+	1800 2900 1800 3050
+Connection ~ 1800 3300
+Wire Wire Line
+	1800 3300 3250 3300
+Wire Wire Line
+	1900 3050 1800 3050
+Connection ~ 1800 3050
+Wire Wire Line
+	1800 3050 1800 3300
+Wire Wire Line
+	1900 2750 1300 2750
+Wire Wire Line
+	1300 2750 1300 2900
+Wire Wire Line
+	1100 2750 1300 2750
+Connection ~ 1300 2750
+Wire Wire Line
+	3800 2800 3800 2650
+Wire Wire Line
+	3800 2650 3050 2650
+Wire Wire Line
+	2950 3000 3050 3000
+Wire Wire Line
+	3050 3000 3050 2650
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5B67F56A
+P 1350 1350
+F 0 "#FLG01" H 1350 1425 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 1524 50  0000 C CNN
+F 2 "" H 1350 1350 50  0001 C CNN
+F 3 "" H 1350 1350 50  0001 C CNN
+	1    1350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5B67F59C
+P 4050 2800
+F 0 "#FLG02" H 4050 2875 50  0001 C CNN
+F 1 "PWR_FLAG" H 4050 2974 50  0000 C CNN
+F 2 "" H 4050 2800 50  0001 C CNN
+F 3 "" H 4050 2800 50  0001 C CNN
+	1    4050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5B67F5C7
+P 1350 1450
+F 0 "#FLG03" H 1350 1525 50  0001 C CNN
+F 1 "PWR_FLAG" H 1350 1624 50  0000 C CNN
+F 2 "" H 1350 1450 50  0001 C CNN
+F 3 "" H 1350 1450 50  0001 C CNN
+	1    1350 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x06_Male J3
+U 1 1 5B6C7ED9
+P 3600 1550
+F 0 "J3" H 3700 1900 50  0000 C CNN
+F 1 "FTDI SERIAL" V 3550 1500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical_SMD_Pin1Left" H 3600 1550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/181/M20-877R-1064237.pdf" H 3600 1550 50  0001 C CNN
+F 4 "855-M20-8770642R" H 0   0   50  0001 C CNN "Mouser #"
+	1    3600 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1350 4050 1350
+$Comp
+L power:GND #PWR06
+U 1 1 5B6C9BF6
+P 4050 1350
+F 0 "#PWR06" H 4050 1100 50  0001 C CNN
+F 1 "GND" H 4055 1177 50  0000 C CNN
+F 2 "" H 4050 1350 50  0001 C CNN
+F 3 "" H 4050 1350 50  0001 C CNN
+	1    4050 1350
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3800 1450
+NoConn ~ 3800 1550
+NoConn ~ 3800 1850
+Wire Wire Line
+	3800 1650 4050 1650
+Text Label 4050 1650 0    50   ~ 0
+FTDI_TX
+Wire Wire Line
+	3800 1750 4050 1750
+Text Label 4050 1750 0    50   ~ 0
+FTDI_RX
+Wire Wire Line
+	4000 6500 4200 6500
+Text Label 4200 6500 0    50   ~ 0
+FTDI_TX
+Wire Wire Line
+	4000 6600 4200 6600
+Text Label 4200 6600 0    50   ~ 0
+FTDI_RX
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J4
+U 1 1 5B6D6209
+P 5350 1450
+F 0 "J4" H 5400 1700 50  0000 C CNN
+F 1 "ISP" H 5400 1250 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical_SMD" H 5350 1450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/181/C001XX_M20_Series_Connectors-1133745.pdf" H 5350 1450 50  0001 C CNN
+F 4 "855-M20-8750342" H 0   0   50  0001 C CNN "Mouser #"
+	1    5350 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1350 4950 1350
+Text Label 4950 1350 2    50   ~ 0
+MISO
+Wire Wire Line
+	5150 1450 4950 1450
+Text Label 4950 1450 2    50   ~ 0
+CLK
+Wire Wire Line
+	5150 1550 4950 1550
+Text Label 4950 1550 2    50   ~ 0
+RESET
+Wire Wire Line
+	5650 1550 5850 1550
+$Comp
+L power:GND #PWR08
+U 1 1 5B6E0363
+P 5850 1550
+F 0 "#PWR08" H 5850 1300 50  0001 C CNN
+F 1 "GND" H 5855 1377 50  0000 C CNN
+F 2 "" H 5850 1550 50  0001 C CNN
+F 3 "" H 5850 1550 50  0001 C CNN
+	1    5850 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1450 5850 1450
+Text Label 5850 1450 0    50   ~ 0
+DATA
+NoConn ~ 5650 1350
+Wire Wire Line
+	4000 5200 4200 5200
+Text Label 4200 5200 0    50   ~ 0
+MISO
+Wire Wire Line
+	1350 4400 1450 4400
+Wire Wire Line
+	1350 4700 1450 4700
+$Comp
+L Device:C C3
+U 1 1 5B6E61CE
+P 1450 4550
+F 0 "C3" H 1565 4596 50  0000 L CNN
+F 1 "10uF" H 1565 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1488 4400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/400/lcc_commercial_general_en-837201.pdf" H 1450 4550 50  0001 C CNN
+F 4 "810-C1608X5R1E106M" H 0   0   50  0001 C CNN "Mouser #"
+	1    1450 4550
+	1    0    0    -1  
+$EndComp
+Connection ~ 1450 4400
+Connection ~ 1450 4700
+$Comp
+L Device:C C4
+U 1 1 5B6ED486
+P 1900 4550
+F 0 "C4" H 2015 4596 50  0000 L CNN
+F 1 "1uF" H 2015 4505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1938 4400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1013_X7R_FT-CAP_SMD-1103280.pdf" H 1900 4550 50  0001 C CNN
+F 4 "80-C0603X105J4R" H 0   0   50  0001 C CNN "Mouser #"
+	1    1900 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 4700 2300 4700
+Connection ~ 1900 4400
+Connection ~ 1900 4700
+Wire Wire Line
+	1450 4700 1900 4700
+Wire Wire Line
+	1450 4400 1900 4400
+Connection ~ 2300 4400
+Wire Wire Line
+	1900 4400 2300 4400
+Connection ~ 1350 1350
+Wire Wire Line
+	1350 1350 1200 1350
+Connection ~ 1350 1450
+Wire Wire Line
+	1350 1450 1200 1450
+Connection ~ 4050 2800
+Wire Wire Line
+	4050 2800 3800 2800
+Text Notes 2200 950  0    180  ~ 36
+CONNECTORS
+Wire Notes Line
+	6550 2050 6550 450 
+Text Notes 2150 2350 0    180  ~ 36
+POWER
+Wire Notes Line
+	5050 3650 450  3650
+Text Notes 1750 4000 0    180  ~ 36
+CONTROLLER
+Text Notes 5250 2400 0    180  ~ 36
+OSCILLATOR
+Wire Notes Line
+	7050 2050 7050 3800
+Wire Notes Line
+	450  2050 7050 2050
+Wire Notes Line
+	5050 2050 5050 8050
+Text Notes 5750 4200 0    180  ~ 36
+BUTTONS
+Wire Notes Line
+	7550 3800 7550 6000
+Wire Notes Line
+	7550 6000 5050 6000
+Wire Notes Line
+	5050 3800 7550 3800
+$EndSCHEMATC

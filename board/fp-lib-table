@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Inductor)(type KiCad)(uri ${KIPRJMOD}/../footprints/Inductor.pretty)(options "")(descr ""))
+  (lib (name Logos)(type KiCad)(uri ${KIPRJMOD}/../footprints/Logos.pretty)(options "")(descr ""))
+)
