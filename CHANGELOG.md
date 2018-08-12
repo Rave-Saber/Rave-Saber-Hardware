@@ -2,6 +2,11 @@
 
 ## master
 
+This version upgrades the prototyping board & through-hole components to a
+printable PCB design & SMD components. We've also bumped the oscillator crystal
+to 20Mhz to squeeze as much power out of the microcontroller as possible.
+
+* Add KiCAD PCB schematic with SMD components.
 
 ## v2.0.0
 
