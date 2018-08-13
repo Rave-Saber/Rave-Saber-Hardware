@@ -2,6 +2,9 @@
 
 ## master
 
+* Document the electronics circuit design.
+* Add an example layout for a prototyping board along with a list of required
+  components and a build guide.
 * Add power sub-circuit that uses a switching voltage regulator so the LEDs &
   microcontroller can run off of batteries.
 * Add 10, 1, & 0.1 uF decoupling capacitors to the microcontroller's power &
