@@ -229,7 +229,6 @@ short-press to switch patterns or long-press again to power down the blade.
 
 ## TODO
 
-* Fix RXD/TXD connections in protoboard layout! They're swapped!
 * Add model number, & links to Components table
 * Update `Mouser_BOM` for prototyping board
 * PCB w/ SMT components using KiCAD
