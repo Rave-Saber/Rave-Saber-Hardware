@@ -70,7 +70,7 @@ clock source and change the definition of the `F_CPU` macro in the firmware's
 
 ### Button
 
-![The RaveSaber button circuits](https://github.com/Rave-Saber/Rave-Saber-Hardware/raw/master/img/schematic-button.png)
+![The RaveSaber button circuits](https://github.com/Rave-Saber/Rave-Saber-Hardware/raw/master/img/schematic-buttons.png)
 
 The main button is `SW1`. It is used to ignite/extinguish the saber & cycle
 through the programmed patterns. We've included both a tactile switch for
