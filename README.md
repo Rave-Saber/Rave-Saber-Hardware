@@ -245,7 +245,9 @@ short-press to switch patterns or long-press again to power down the blade.
 **Future Milestones**
 
 v2.0.0 - prototype board w/ battery attached to some wood
+
 v3.0.0 - pcb w/ pvc hilt & actual blade
+
 v4.0.0 - pcb that fit MHS hilts
 
 
