@@ -12,8 +12,6 @@ around using the prototype board & a piece of wood.
 The Rave Saber board includes voltage regulation, utility headers, input
 buttons, and an Atmel ATmega168a microchip.
 
-TODO: Add info about circuit & sub-circuits here. Use KiCAD schematic instead of the fritzing one.
-
 ### Connectors
 
 ![The various RaveSaber connectors](https://github.com/Rave-Saber/Rave-Saber-Hardware/raw/master/img/schematic-connectors.png)
@@ -247,8 +245,7 @@ short-press to switch patterns or long-press again to power down the blade.
 
 ## TODO
 
-* Add model number, & links to Components table
-* Update `Mouser_BOM` for prototyping board
+* Add model number to Components table
 * PCB w/ SMT components using KiCAD
 * Auto-generate BOM: https://github.com/SchrodingersGat/KiBoM
     * Make sure to add DIP socket to BoM
@@ -271,9 +268,14 @@ v4.0.0 - pcb that fit MHS hilts
 
 ## References
 
-**PVC Hilts**
+**Hilts**
 
-* http://forums.thecustomsabershop.com/showthread.php?3266-Jay-gon-s-PVC-Hilts-Full-tutorial-on-last-page&p=138540&viewfull=1#post138540
+* [Jay-gon's PVC Hilt Tutorial](http://forums.thecustomsabershop.com/showthread.php?3266-Jay-gon-s-PVC-Hilts-Full-tutorial-on-last-page&p=138540&viewfull=1#post138540)
+
+**Blades**
+
+* [Neopixel Blade Assembly - FX-Sabers](https://www.fx-sabers.com/forum/index.php?PHPSESSID=06jl1sddsstpq4hvnu0c9fat74&topic=51357.0)
+* [LED Blade Assembly](https://www.youtube.com/watch?v=Qbl4K-v4G_s)
 
 
 ## License
