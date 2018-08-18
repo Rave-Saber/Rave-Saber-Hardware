@@ -101,8 +101,8 @@ If you're only testing this out on a breadboard you can get away with just:
 
 ### Components
 
-For the breadboard, you just need an ATmega168a microcontroller & a tactile
-button.
+For the breadboard, you just need a Dotstar strip, an ATmega168a
+microcontroller & a tactile button.
 
 For the prototyping board, you will need the following:
 
@@ -111,7 +111,7 @@ For the prototyping board, you will need the following:
 |---|---|---|
 | | 22x27 through-hole prototyping board | [Amazon][protoboard] |
 | BAT | 7.4v Li-Ion battery | [TCSS][battery] |
-| LED | DotStart Strip, 144/m | [Mouser][led-strip] |
+| LED | DotStar Strip, 144/m | [Mouser][led-strip] |
 | J1 | 2-pin JST connector | [TCSS][jst-connector] |
 | J2 | 4-pin, 2.54mm pitch male header | [Amazon][headers] |
 | J3 | 6-pin, 2.54mm pitch male header | [Amazon][headers] |
@@ -235,9 +235,26 @@ with your 22-gauge wire. We did this in the following order:
 Everything should be connected, your circuit should resemble the schematics, &
 your prototyping board should resemble the above layout.
 
-Place the ATmega168a into the DIP socket at `U2` & connect the Dotstar strip,
-your Programmer's ISP cable, and the battery. Flash the [RaveSaber
-Firmware][firmware] & disconnect the programmer.
+Place the ATmega168a into the DIP socket at `U2` & connect your Programmer's
+ISP cable and the battery. Flash the [RaveSaber Firmware][firmware] &
+disconnect the programmer & battery.
+
+### Saber Blade / Hilt
+
+The saber blade & hilt construction is very simple - we haven't put together a
+blade or hilt yet so we just attach our LEDs & protoboard to a piece of wood.
+We used a long 1x2 that we cut down after assembly. It's heavy, but you can
+actually swing it around.
+
+1. Lay your DotStar strip at the end of your board & secure it with 4-5
+   zipties. Start at the far end, keeping the strip flat as you work towards
+   the center of your wood.
+1. Place the prototyping board below the strip, secure it with zipties at both
+   ends and one in the center.
+1. Flip the board over and place your battery near the board & strip, secure it
+   with 3 zipties.
+1. Connect the LED strip to the 4-pin header on the board and connect your
+   battery to the board's JST connector.
 
 You should now be able to long-press the button to illumunate the blade then
 short-press to switch patterns or long-press again to power down the blade.
