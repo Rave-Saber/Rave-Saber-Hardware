@@ -91,7 +91,7 @@ You'll want to have the following equipment/supplies:
 * Wire Strippers
 * Flush Cutters
 * Soldering Iron & Solder
-* PCB holder(optional)
+* PCB Holder(optional)
 * Anti-static Bracelet or ESD-safe Tweezers(optional)
 
 If you're only testing this out on a breadboard you can get away with just:
@@ -99,6 +99,7 @@ If you're only testing this out on a breadboard you can get away with just:
 * Breadboard
 * Wire & Strippers
 * AVR Programmer
+* 5V Power Supply
 
 ### Components
 
@@ -110,27 +111,44 @@ For the prototyping board, you will need the following:
 
 | Part | Description | Link |
 |---|---|---|
-| | 22x27 through-hole prototyping board | |
-| BAT | 7.4v Li-Ion battery | |
-| J1 | 2-pin JST connector | |
-| J2 | 4-pin, 2.54mm pitch male header | |
-| J3 | 6-pin, 2.54mm pitch male header | |
-| J4 | 2x3-pin, 2.54mm pitch male header | |
-| C1 | 100uF low-ESR electrolytic capacitor | |
-| C2 | 1000-2000uF low-ESR electrolytic capacitor | |
-| C3 | 10uF capacitor | |
-| C4 | 1uF capacitor | |
-| C5 | 100nF capacitor | |
-| C6, C7 | 20pF capacitor | |
-| Y1 | 16Mhz Crystal | |
-| SW1, SW2 | 6mm SPST tactile switch | |
-| U1 | LM2576TV-5G - 5V, 3A switching voltage regulator | |
-| U2 | 28-pin DIP IC socket | |
-| U2 | Atmel ATmega168A-PU - AVR microcontroller | |
+| | 22x27 through-hole prototyping board | [Amazon][protoboard] |
+| BAT | 7.4v Li-Ion battery | [TCSS][battery] |
+| LED | DotStart Strip, 144/m | [Mouser][led-strip] |
+| J1 | 2-pin JST connector | [TCSS][jst-connector] |
+| J2 | 4-pin, 2.54mm pitch male header | [Amazon][headers] |
+| J3 | 6-pin, 2.54mm pitch male header | [Amazon][headers] |
+| J4 | 2x3-pin, 2.54mm pitch male header | [Amazon][headers] |
+| C1 | 100uF low-ESR electrolytic capacitor | [Mouser][100-cap] |
+| C2 | 1000-2000uF low-ESR electrolytic capacitor | [Mouser][1200-cap] |
+| C3 | 10uF capacitor | [Amazon(assorted)][elec-cap-kit] |
+| C4 | 1uF capacitor | [Amazon(assorted)][elec-cap-kit] |
+| C5 | 100nF capacitor | [Amazon(assorted)][cer-cap-kit] |
+| C6, C7 | 20pF capacitor | [Mouser][20-cap] |
+| D1 | 3A, 20V Schottky Diode | [Mouser][diode] |
+| L1 | 47uH, 3A Fixed Inductor | [Mouser][inductor] |
+| Y1 | 16Mhz Crystal | [Mouser][crystal] |
+| SW1, SW2 | 6mm SPST OFF-(ON) tactile switch | [Mouser][switch] |
+| U1 | LM2576TV-5G - 5V, 3A switching voltage regulator | [Mouser][vreg] |
+| U2 | 28-pin DIP IC socket | [Amazon][dip-socket] |
+| U2 | Atmel ATmega168A-PU - AVR microcontroller | [Mouser][atmega] |
 
-There is a Bill of Materials in `Mouser_BOM.xls` that you can use to import a
-cart at [Mouser][mouser]. Simple go to `My Account` and choose `Import BOMs`
-from the sidebar.
+[protoboard]: https://amzn.to/2L2IWVJ
+[battery]: http://www.thecustomsabershop.com/74v-Li-ion-2600mAh-18650-Battery-Pack-P699.aspx
+[led-strip]: https://www.mouser.com/ProductDetail/485-2242
+[jst-connector]: http://www.thecustomsabershop.com/JST-connector-kit-male-and-female--P941.aspx
+[headers]: https://amzn.to/2Mx6HtK
+[100-cap]: https://www.mouser.com/ProductDetail/710-870135675003
+[1200-cap]: https://www.mouser.com/ProductDetail/667-EEU-FC1A122S
+[elec-cap-kit]: https://amzn.to/2wb0Ekk
+[cer-cap-kit]: https://amzn.to/2PiyX1K
+[20-cap]: https://www.mouser.com/ProductDetail/594-S200K25SL0N63L6R
+[diode]: https://www.mouser.com/ProductDetail/863-1N5820G
+[inductor]: https://www.mouser.com/ProductDetail/673-PE-53112NL
+[crystal]: https://www.mouser.com/ProductDetail/520-HCA1600-20X
+[switch]: https://www.mouser.com/ProductDetail/506-FSM4JH
+[vreg]: https://www.mouser.com/ProductDetail/863-LM2576TV-5G
+[dip-socket]: https://amzn.to/2Mo4dOU
+[atmega]: https://www.mouser.com/ProductDetail/556-ATMEGA168A-PU
 
 
 ## Setup
