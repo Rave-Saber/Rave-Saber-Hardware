@@ -262,25 +262,28 @@ short-press to switch patterns or long-press again to power down the blade.
 
 ## TODO
 
-* Add model number to Components table
 * PCB w/ SMT components using KiCAD
 * Auto-generate BOM: https://github.com/SchrodingersGat/KiBoM
-    * Make sure to add DIP socket to BoM
+    * Make sure to add DIP socket, LED strips, etc. to BoM
 * Link to upload gerbers to OSHPark: https://docs.oshpark.com/tips+tricks/api/
 * Blade construction guide, using TCSS blade parts
 * PVC Hilt construction guide
     * Eventually use MHS hilts as well, but that's not open hardware
     * See how much it'd cost to get someone to design an open/free metal hilt
       that machinists could reproduce.
-* Recharge port
+    * Chassis disk design, for use w/ acrylic laser cutting service or online
+      machine shop.
+* Contact Saber design
+    * For doing moves [like this](https://youtu.be/Wgl2wym96k0)
+    * Needs to be well balanced - some kind of chassis weighting?
+    * Research best balance point for contact sabering
+* Recharge port? Recharging blade stub?
 
 **Future Milestones**
 
-v2.0.0 - prototype board w/ battery attached to some wood
-
 v3.0.0 - pcb w/ pvc hilt & actual blade
 
-v4.0.0 - pcb that fit MHS hilts
+v4.0.0 - pcb & chassis that fits in MHS hilts
 
 
 ## References
