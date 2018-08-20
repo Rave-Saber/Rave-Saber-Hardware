@@ -2,6 +2,17 @@
 
 ## master
 
+
+## v2.0.0
+
+This is actually a portable version that you can swing around. The electronics
+are constructed on a prototyping board so they are much more secure than the
+breadboard, and a voltage regulator has been added so we can run off of
+rechargable 7.4V Li-Ion batteries.
+
+There is still no blade or hilt design though - swinging this around means
+attaching the LED & electronics to a piece of wood.
+
 * Document the electronics circuit design.
 * Add an example layout for a prototyping board along with a list of required
   components and a build guide.

@@ -1,12 +1,11 @@
 EESchema Schematic File Version 4
-LIBS:ravesaber-cache
 EELAYER 26 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Main Board"
-Date "2018-08-03"
+Title "Rave Saber Board"
+Date "2018-08-20"
 Rev "v2.0.0"
 Comp "Rave Saber"
 Comment1 ""
