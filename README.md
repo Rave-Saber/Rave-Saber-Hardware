@@ -1,10 +1,10 @@
 # RaveSaber - AVR Hardware
 
-This repository contains the hardware schematics, prototype board layout, parts
-list, & setup guide for the RaveSaber electronics.
+This repository contains the circuit diagram, PCB schematics, prototype board
+layout, parts list, & setup guide for the RaveSaber electronics.
 
-There is no blade or PCB design at the moment, but you can swing the LEDs
-around using the prototype board & a piece of wood.
+There is no blade or hilt at the moment, but you can swing the LEDs
+around using the PCB or prototype board & a piece of wood.
 
 
 ## Electronics Design
@@ -149,6 +149,58 @@ For the prototyping board, you will need the following:
 [atmega]: https://www.mouser.com/ProductDetail/556-ATMEGA168A-PU
 
 
+For the circuit board, you will need SMD components instead:
+
+| Part | Description | Link
+|---|---|---|
+| | RaveSaber v3.0.0 PCB | [OSHPark][pcb-3.0.0]
+| BAT | 7.4v Li-Ion battery | [TCSS][battery] |
+| LED | DotStar Strip, 144/m | [Mouser][led-strip] |
+| J1 | 2-pin JST connector | [TCSS][jst-connector]
+| J2 | 4-pin, 2.54mm pitch male header | [Mouser][pcb-4-pin]
+| J3 | 6-pin, 2.54mm pitch male header | [Mouser][pcb-6-pin]
+| J4 | 2x3-pin, 2.54mm pitch male header | [Mouser][pcb-2-3-pin]
+| C1 | 100uF low-ESR electrolytic capacitor | [Mouser][pcb-100-cap] |
+| C2 | 1500uF low-ESR electrolytic capacitor | [Mouser][pcb-1500-cap] |
+| C3 | 10uF capacitor | [Mouser][pcb-10-cap] |
+| C4 | 1uF capacitor | [Mouser][pcb-1-cap] |
+| C5 | 100nF capacitor | [Mouser][pcb-100n-cap] |
+| C6, C7 | 20pF capacitor | [Mouser][pcb-20-cap] |
+| D1 | 3A, 20V Schottky Diode | [Mouser][pcb-diode] |
+| L1 | 47uH, 3A Fixed Inductor | [Mouser][pcb-inductor] |
+| Y1 | 20Mhz Crystal | [Mouser][pcb-crystal] |
+| SW1, SW2 | 4.5mm SPST OFF-(ON) tactile switch | [Mouser][pcb-switch] |
+| U1 | LM2576TV-5G - 5V, 3A switching voltage regulator | [Mouser][vreg] |
+| U2 | 28-pin DIP IC Socket | [Mouser][pcb-dip-socket] |
+| U2 | Atmel ATmega168A-PU - AVR microcontroller | [Mouser][atmega] |
+
+NOTE: After having the PCB printed, we noticed some issues with these
+components:
+
+* The pins & sockets for `J2` & `U2` are circular instead of flat.
+* The footprint for `J3` is flipped compared to the actual component.
+* The footprint for `C2` is too large.
+
+Building this version of the PCB is possible, but we recommend swapping these
+parts out. These issues will be fixed in v3.0.1.
+
+[pcb-3.0.0]: https://oshpark.com/shared_projects/t8VlH9g8
+[pcb-4-pin]: https://www.mouser.com/ProductDetail/437-3508010400106101
+[pcb-6-pin]: https://www.mouser.com/ProductDetail/855-M20-8770642R
+[pcb-2-3-pin]: https://www.mouser.com/ProductDetail/855-M20-8750342
+[pcb-100-cap]: https://www.mouser.com/ProductDetail/661-EMZJ350A101MHA0G
+[pcb-1500-cap]: https://www.mouser.com/ProductDetail/598-AFK158M16H32T-F
+[pcb-10-cap]: https://www.mouser.com/ProductDetail/810-C1608X5R1E106M
+[pcb-1-cap]: https://www.mouser.com/ProductDetail/80-C0603X105J4R
+[pcb-100n-cap]: https://www.mouser.com/ProductDetail/581-0603X7R104JT1AT
+[pcb-20-cap]: https://www.mouser.com/ProductDetail/603-CC603GRNPO9BN200
+[pcb-diode]: https://www.mouser.com/ProductDetail/621-B320A-F
+[pcb-inductor]: https://www.mouser.com/ProductDetail/710-744373965470
+[pcb-crystal]: https://www.mouser.com/ProductDetail/559-FOXSDLF200-20
+[pcb-switch]: https://www.mouser.com/ProductDetail/612-TL3305AF260QG
+[pcb-dip-socket]: https://www.mouser.com/ProductDetail/575-1104732841105000
+
+
 ## Setup
 
 ### Breadboard
@@ -239,6 +291,17 @@ Place the ATmega168a into the DIP socket at `U2` & connect your Programmer's
 ISP cable and the battery. Flash the [RaveSaber Firmware][firmware] &
 disconnect the programmer & battery.
 
+### PCB Assembly
+
+You should be decent at soldering SMD components before attempting this.
+
+We recommend soldering `C3` through `C7` first, followed by `U2`, `SW1`, `Y1`,
+`SW2`, `J2` through `J4`, `D1`, `C1`, `L1`, `C2`, & finally `U2`. Use female
+JST cables for `J1` & `J5`. Scrub with isopropyl alcohol to clean off any flux.
+
+You can now insert & flash the microchip, plug in the battery, connect the
+lights, and long-press `SW1` to extend the blade.
+
 ### Saber Blade / Hilt
 
 The saber blade & hilt construction is very simple - we haven't put together a
@@ -262,10 +325,8 @@ short-press to switch patterns or long-press again to power down the blade.
 
 ## TODO
 
-* PCB w/ SMT components using KiCAD
 * Auto-generate BOM: https://github.com/SchrodingersGat/KiBoM
     * Make sure to add DIP socket, LED strips, etc. to BoM
-* Link to upload gerbers to OSHPark: https://docs.oshpark.com/tips+tricks/api/
 * Blade construction guide, using TCSS blade parts
 * PVC Hilt construction guide
     * Eventually use MHS hilts as well, but that's not open hardware
@@ -281,9 +342,12 @@ short-press to switch patterns or long-press again to power down the blade.
 
 **Future Milestones**
 
-v3.0.0 - pcb w/ pvc hilt & actual blade
+Rough drafts of future plans
 
-v4.0.0 - pcb & chassis that fits in MHS hilts
+* v3.0.1 - fix C2 footprint, use pin-type components for `J2` & `U2`.
+* v3.1.0 - 90deg ISP pins? Source single component for all 1-row pins & have
+  assembler break apart. blade build + guide
+* v4.0.0 - pcb & chassis that fits in MHS hilts
 
 
 ## References
