@@ -112,7 +112,7 @@ For the prototyping board, you will need the following:
 | | 22x27 through-hole prototyping board | [Amazon][protoboard] |
 | BAT | 7.4v Li-Ion battery | [TCSS][battery] |
 | LED | DotStar Strip, 144/m | [Mouser][led-strip] |
-| J1 | 2-pin JST connector | [TCSS][jst-connector] |
+| J1 | 2-pin JST connector | [TCSS][jst-power-connector] |
 | J2 | 4-pin, 2.54mm pitch male header | [Amazon][headers] |
 | J3 | 6-pin, 2.54mm pitch male header | [Amazon][headers] |
 | J4 | 2x3-pin, 2.54mm pitch male header | [Amazon][headers] |
@@ -133,7 +133,7 @@ For the prototyping board, you will need the following:
 [protoboard]: https://amzn.to/2L2IWVJ
 [battery]: http://www.thecustomsabershop.com/74v-Li-ion-2600mAh-18650-Battery-Pack-P699.aspx
 [led-strip]: https://www.mouser.com/ProductDetail/485-2242
-[jst-connector]: http://www.thecustomsabershop.com/JST-connector-kit-male-and-female--P941.aspx
+[jst-power-connector]: https://www.thecustomsabershop.com/JST-Female-connector-24AWG-RedBlack-P964.aspx
 [headers]: https://amzn.to/2Mx6HtK
 [100-cap]: https://www.mouser.com/ProductDetail/710-870135675003
 [1200-cap]: https://www.mouser.com/ProductDetail/667-EEU-FC1A122S
@@ -156,10 +156,11 @@ For the circuit board, you will need SMD components instead:
 | | RaveSaber v3.0.0 PCB | [OSHPark][pcb-3.0.0]
 | BAT | 7.4v Li-Ion battery | [TCSS][battery] |
 | LED | DotStar Strip, 144/m | [Mouser][led-strip] |
-| J1 | 2-pin JST connector | [TCSS][jst-connector]
+| J1 | 2-pin JST connector | [TCSS][jst-power-connector]
 | J2 | 4-pin, 2.54mm pitch male header | [Mouser][pcb-4-pin]
 | J3 | 6-pin, 2.54mm pitch male header | [Mouser][pcb-6-pin]
 | J4 | 2x3-pin, 2.54mm pitch male header | [Mouser][pcb-2-3-pin]
+| J5 | 2-pin JST connector | [TCSS][jst-switch-connector]
 | C1 | 100uF low-ESR electrolytic capacitor | [Mouser][pcb-100-cap] |
 | C2 | 1500uF low-ESR electrolytic capacitor | [Mouser][pcb-1500-cap] |
 | C3 | 10uF capacitor | [Mouser][pcb-10-cap] |
@@ -188,6 +189,7 @@ parts out. These issues will be fixed in v3.0.1.
 [pcb-4-pin]: https://www.mouser.com/ProductDetail/437-3508010400106101
 [pcb-6-pin]: https://www.mouser.com/ProductDetail/855-M20-8770642R
 [pcb-2-3-pin]: https://www.mouser.com/ProductDetail/855-M20-8750342
+[jst-switch-connector]: https://www.thecustomsabershop.com/JST-Female-connector-24AWG-BlueWhite-P958.aspx
 [pcb-100-cap]: https://www.mouser.com/ProductDetail/661-EMZJ350A101MHA0G
 [pcb-1500-cap]: https://www.mouser.com/ProductDetail/598-AFK158M16H32T-F
 [pcb-10-cap]: https://www.mouser.com/ProductDetail/810-C1608X5R1E106M
