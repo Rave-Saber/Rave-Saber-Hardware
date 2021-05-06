@@ -2,6 +2,13 @@
 
 ## master
 
+* Move Jumper & Switch silkscreen labels to outside their footprints.
+* Switch the 0603 Capacitor footprints to a slightly more elongated version.
+* Shift the footprint of SW2 up so that it's courtyard does not
+  intersect with J4's.
+* Ensure L1 silkscreen does not intersect with solder pads.
+* Fix footprint size of C2 by creating a new custom footprint.
+
 
 ## v3.0.0
 
