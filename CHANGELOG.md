@@ -2,6 +2,12 @@
 
 ## master
 
+* Fix machine-pin component for `J2` and component/footprint mismatch for `J3`.
+  The previous `J2` component we linked to had pin diameters much too small to
+  hook up to the DotStar strip. The previous `J3` component had the solder pad
+  for pin 1 on the right side of the footprint instead of the left side.  To
+  address this, we link to a 20-pin strip with proper pin widths & break them
+  into the sizes & orientations necessary.
 * Move Jumper & Switch silkscreen labels to outside their footprints.
 * Switch the 0603 Capacitor footprints to a slightly more elongated version.
 * Shift the footprint of SW2 up so that it's courtyard does not

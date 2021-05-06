@@ -175,19 +175,15 @@ For the circuit board, you will need SMD components instead:
 | U2 | 28-pin DIP IC Socket | [Mouser][pcb-dip-socket] |
 | U2 | Atmel ATmega168A-PU - AVR microcontroller | [Mouser][atmega] |
 
-NOTE: After having the PCB printed, we noticed some issues with these
-components:
+NOTE: The 4- & 6-pin headers link to a 20-pin header. We simply break this into
+the sizes necessary with some pliers.
 
-* The pins & sockets for `J2` & `U2` are circular instead of flat.
-* The footprint for `J3` is flipped compared to the actual component.
-* The footprint for `C2` is too large.
-
-Building this version of the PCB is possible, but we recommend swapping these
-parts out. These issues will be fixed in v3.0.1.
+NOTE: The DIP socket for `U2` is machine-holed. You may prefer a leaf-spring
+socket instead.
 
 [pcb-3.0.0]: https://oshpark.com/shared_projects/t8VlH9g8
-[pcb-4-pin]: https://www.mouser.com/ProductDetail/437-3508010400106101
-[pcb-6-pin]: https://www.mouser.com/ProductDetail/855-M20-8770642R
+[pcb-4-pin]: https://www.mouser.com/ProductDetail/Samtec/TSM-120-01-S-SV-P
+[pcb-6-pin]: https://www.mouser.com/ProductDetail/Samtec/TSM-120-01-S-SV-P
 [pcb-2-3-pin]: https://www.mouser.com/ProductDetail/855-M20-8750342
 [jst-switch-connector]: https://www.thecustomsabershop.com/JST-Female-connector-24AWG-BlueWhite-P958.aspx
 [pcb-100-cap]: https://www.mouser.com/ProductDetail/661-EMZJ350A101MHA0G
@@ -346,7 +342,6 @@ short-press to switch patterns or long-press again to power down the blade.
 
 Rough drafts of future plans
 
-* v3.0.1 - fix C2 footprint, use pin-type components for `J2` & `U2`.
 * v3.1.0 - 90deg ISP pins? Source single component for all 1-row pins & have
   assembler break apart. blade build + guide
 * v4.0.0 - pcb & chassis that fits in MHS hilts
