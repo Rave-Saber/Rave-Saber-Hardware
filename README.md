@@ -323,7 +323,7 @@ short-press to switch patterns or long-press again to power down the blade.
 
 ## TODO
 
-* Auto-generate BOM: https://github.com/SchrodingersGat/KiBoM
+* Auto-generate BOM(using [KiBoM](https://github.com/SchrodingersGat/KiBoM)?)
     * Make sure to add DIP socket, LED strips, etc. to BoM
 * Blade construction guide, using TCSS blade parts
 * PVC Hilt construction guide
@@ -338,7 +338,7 @@ short-press to switch patterns or long-press again to power down the blade.
     * Research best balance point for contact sabering
 * Recharge port? Recharging blade stub?
 
-**Future Milestones**
+### Future Milestones
 
 Rough drafts of future plans
 
@@ -349,11 +349,11 @@ Rough drafts of future plans
 
 ## References
 
-**Hilts**
+### Hilts
 
 * [Jay-gon's PVC Hilt Tutorial](http://forums.thecustomsabershop.com/showthread.php?3266-Jay-gon-s-PVC-Hilts-Full-tutorial-on-last-page&p=138540&viewfull=1#post138540)
 
-**Blades**
+### Blades
 
 * [Neopixel Blade Assembly - FX-Sabers](https://www.fx-sabers.com/forum/index.php?PHPSESSID=06jl1sddsstpq4hvnu0c9fat74&topic=51357.0)
 * [LED Blade Assembly](https://www.youtube.com/watch?v=Qbl4K-v4G_s)
